@@ -1868,7 +1868,7 @@ def raise_on_error(code, data):
             pass
         if server_info:
             server_info = "\n".join(
-                line for line in server_info.splitlines() if line)
+                line for line in str(server_info).splitlines() if line)
 
     # No data.
     if code == 204:
